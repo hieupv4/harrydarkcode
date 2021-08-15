@@ -1,0 +1,29 @@
+.main-section {
+  .desktop {
+    img {
+      width: 100%;
+      margin-bottom: -4px;
+    }
+  }
+  .mobile {
+    img {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    .desktop {
+      img {
+        display: none;
+      }
+    }
+    .mobile {
+      img {
+        display: block;
+        width: 100%;
+        margin-bottom: -4px;
+      }
+    }
+  }
+}

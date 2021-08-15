@@ -1,0 +1,304 @@
+.navigation-main {
+  .navigation-mx {
+    font-size: 12px;
+    text-align: center;
+    background: $bg-dark;
+    color: $color-white;
+    padding: 5px 0;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .navigation-bars {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: $bg-white;
+    line-height: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .nav-brand {
+      display: block;
+      line-height: 70px;
+      text-decoration: none;
+      color: $color-black;
+      margin-left: 25px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .toggle-navigation {
+      display: none;
+      padding: 5px 15px;
+      margin: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      i {
+        font-size: 25px;
+      }
+    }
+
+    .middle-navigation {
+      display: flex;
+      margin-left: auto;
+      &-header {
+        display: none;
+      }
+      .center {
+        display: flex;
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          list-style-type: none;
+          margin-right: 10px;
+          line-height: 70px;
+          margin-left: 50px;
+          li {
+            a {
+              padding: 0 20px;
+              text-decoration: none;
+              font-size: 15px;
+              color: $color-secondary;
+              display: flex;
+              font-weight: 500;
+
+              &:hover {
+                color: $color-black;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+
+        .search-form {
+          margin-right: 10px;
+          display: flex;
+          padding: 18px;
+
+          .search-input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+            font-size: 14px;
+            padding-right: 10px;
+          }
+          .search-btn {
+            outline: none;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #000;
+            cursor: pointer;
+
+            .search-icon {
+              font-size: 18px;
+              margin-right: 2px;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          list-style-type: none;
+          li {
+            a {
+              i {
+                font-size: 20px;
+                color: $color-black;
+                padding: 0 20px;
+                color: $color-secondary;
+
+                &:hover {
+                  color: $color-black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .navigation-main {
+    .navigation-bars {
+      .middle-navigation {
+        .center {
+          display: none;
+        }
+      }
+      .middle-navigation.active {
+        z-index: 9999;
+        margin-left: 0;
+        position: fixed;
+        background: $bg-white;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+
+        .middle-navigation-header {
+          display: block;
+          font-size: 40px;
+          padding: 0 25px;
+          cursor: pointer;
+        }
+
+        .center {
+          top: 10%;
+          display: block;
+          position: absolute;
+          width: 100%;
+          margin-left: -50px;
+
+          ul {
+            display: block;
+            width: 100%;
+            li {
+              a {
+                display: block;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .right {
+          display: none;
+          position: absolute;
+          top: 100px;
+          width: 100%;
+
+          .search-form {
+            width: 100%;
+            .search-input {
+              padding: 15px 0;
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+
+          ul {
+            display: block;
+            li {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .center {
+        display: block;
+        z-index: 1;
+      }
+      .toggle-navigation {
+        display: block;
+      }
+      .center {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-main {
+    .navigation-bars {
+      
+      .nav-brand {
+        margin: 0 auto;
+      }
+
+      .middle-navigation {
+        .right {
+          display: none;
+        }
+      }
+      .middle-navigation.active {
+        margin-left: 0;
+        position: fixed;
+        background: $bg-white;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+
+        .middle-navigation-header {
+          display: block;
+          font-size: 40px;
+          padding: 0 25px;
+          height: 70px;
+          cursor: pointer;
+        }
+
+        .center {
+          top: 35%;
+          display: block;
+          position: absolute;
+          width: 100%;
+          margin-left: -50px;
+
+          ul {
+            display: block;
+            width: 100%;
+            li {
+              a {
+                display: block;
+                width: 100%;
+                border: 2px solid transparent;
+
+                &:hover {
+                  border: 2px solid transparent;
+                }
+              }
+            }
+          }
+        }
+
+        .right {
+          display: block;
+          position: absolute;
+          top: 100px;
+          width: 100%;
+
+          .search-form {
+            width: 100%;
+            .search-input {
+              padding: 15px 0;
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+
+          ul {
+            display: block;
+            li {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-main {
+    .navigation-mx {
+      font-size: 9px;
+    }
+  }
+}
