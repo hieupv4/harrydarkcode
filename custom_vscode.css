@@ -1,0 +1,82 @@
+:root {
+  --gradient-dir1: to right bottom;
+  --gradient-dir2: to left top;
+  --gradient-dir3: to right top;
+}
+.mtk17 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #c586c0, #c586c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk9 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #9cdcfe, #9cdcfe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk1 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #d4d4d4, #d4d4d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk4 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #6a9955, #6a9955);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk5 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #569cd6, #569cd6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk16 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #4ec9b0, #4ec9b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk18 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #4fc1ff, #4fc1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.monaco-editor .ced-1-TextEditorDecorationType28-1 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), orchid, orchid);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk15 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #dcdcaa, #dcdcaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk11 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #ce9178, #ce9178);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk6 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir3), #b5cea8, #b5cea8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
