@@ -1,0 +1,43 @@
+.wrapper {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.cols {
+  display: flex;
+  justify-content: space-around;
+  gap: $col-gap;
+}
+.col {
+  width: 100%;
+  &-3 {
+    max-width: calc($max-width - 75%);
+    width: 100%;
+    position: relative;
+  }
+  &-7 {
+    max-width: calc($max-width - 25%);
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  .cols {
+    flex-direction: column;
+    gap: 0;
+  }
+  .col {
+    margin-bottom: 40px;
+    &-3 {
+      width: 100%;
+    }
+    &-7 {
+      width: 100%;
+    }
+  }
+}

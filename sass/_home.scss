@@ -1,0 +1,87 @@
+.info {
+  background: #fff;
+  border-radius: 15px;
+  color: #000;
+  font-size: 14px;
+  &--image {
+    padding: 40px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+      font-size: 14px;
+      background: rgba(111, 118, 237, 0.8);
+      color: $white-color;
+      padding: 10px;
+      border-radius: 0 30px 30px 30px;
+      opacity: 0;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover span {
+      opacity: 1;
+      bottom: 30px;
+    }
+    img {
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      border-radius: 50%;
+      transition: 0.3s ease-out;
+    }
+  }
+  &--name {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 28px;
+    color: $text-color;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  &--slogan {
+    padding: 10px 20px;
+    color: $text-color;
+    text-align: center;
+    line-height: 1.1;
+  }
+  &--content {
+    padding: 10px 20px;
+    &__item {
+      background: $primary-color;
+      margin-bottom: 5px;
+      padding: 30px 15px;
+      font-size: 15px;
+      color: $white-color;
+      position: relative;
+      transition: 0.3s ease-in-out;
+      padding-right: 30px;
+      top: 0;
+      text-align: left;
+      &:hover {
+        cursor: pointer;
+        background: $primary-color-hover;
+        font-size: 20px;
+        top: -10px;
+      }
+      &:first-child {
+        border-radius: 15px 15px 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 0;
+      }
+      &--icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

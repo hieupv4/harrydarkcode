@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.cols {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.col {
+  width: 100%;
+}
+.col-3 {
+  max-width: calc(1600px - 75%);
+  width: 100%;
+  position: relative;
+}
+.col-7 {
+  max-width: calc(1600px - 25%);
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .cols {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .col {
+    margin-bottom: 40px;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+}
+.info {
+  background: #fff;
+  border-radius: 15px;
+  color: #000;
+  font-size: 14px;
+}
+.info--image {
+  padding: 40px;
+  position: relative;
+}
+.info--image:hover {
+  cursor: pointer;
+}
+.info--image span {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  font-size: 14px;
+  background: rgba(111, 118, 237, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 30px 30px 30px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.info--image:hover span {
+  opacity: 1;
+  bottom: 30px;
+}
+.info--image img {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+}
+.info--name {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 28px;
+  color: #404040;
+  margin-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+.info--slogan {
+  padding: 10px 20px;
+  color: #404040;
+  text-align: center;
+  line-height: 1.1;
+}
+.info--content {
+  padding: 10px 20px;
+}
+.info--content__item {
+  background: #6f76ed;
+  margin-bottom: 5px;
+  padding: 30px 15px;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  padding-right: 30px;
+  top: 0;
+  text-align: left;
+}
+.info--content__item:hover {
+  cursor: pointer;
+  background: #545df0;
+  font-size: 20px;
+  top: -10px;
+}
+.info--content__item:first-child {
+  border-radius: 15px 15px 0 0;
+}
+.info--content__item:last-child {
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 0;
+}
+.info--content__item--icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=app.css.map */
