@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
@@ -22,14 +28,13 @@
             </div>
             <div class="info--name">Pham Van Hieu</div>
             <div class="info--slogan">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Assumenda, cum eum amet odit asperiores, adipisci necessitatibus
-              eveniet quae sequi repellendus officia. Illum, inventore!
-              Voluptatibus possimus officiis tenetur, numquam nihil voluptas.
+              A <span class="years-old">17</span> year old boy from Phu Yen,
+              Vietnam. Have a passion to become a good programmer, pursuing to
+              become a Full-stack developer
             </div>
             <div class="info--content">
               <div class="info--content__item">
-                30/03/2004
+                30 / 03 / 2004
                 <span class="info--content__item--icon"
                   ><i class="fas fa-birthday-cake"></i
                 ></span>
@@ -38,6 +43,12 @@
                 0911 44 2972
                 <span class="info--content__item--icon"
                   ><i class="fas fa-phone"></i
+                ></span>
+              </div>
+              <div class="info--content__item">
+                hieuphamzsh@gmail.com
+                <span class="info--content__item--icon"
+                  ><i class="fas fa-envelope-open-text"></i
                 ></span>
               </div>
               <div class="info--content__item">
@@ -55,15 +66,24 @@
             </div>
             <div class="info--social">
               <div class="info--social__item">
-                <a href="#!Facebook"><i class="fas fa-facebook"></i></a>
+                <a href="#!Facebook"><i class="fab fa-facebook"></i></a>
               </div>
               <div class="info--social__item">
-                <a href="#!Github"><i class="fas fa-github"></i></a>
+                <a href="#!Github"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      (() => {
+        const e = document.querySelector('.years-old');
+        const b = 2004;
+        const y = new Date().getFullYear();
+        e.innerHTML = y - b;
+      })();
+    </script>
   </body>
 </html>
