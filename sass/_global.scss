@@ -4,4 +4,6 @@
 body {
     background: #f0f0f0;
     font-family: Barlow, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
