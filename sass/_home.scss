@@ -75,6 +75,8 @@
         margin-bottom: 5px;
         transition: 0.3s ease-in-out;
         color: $black-color;
+        font-family: Druk;
+        text-transform: uppercase;
     }
     &--slogan {
         padding: 10px 20px 15px;
@@ -82,6 +84,7 @@
         text-align: center;
         line-height: 1.1;
         color: $black-color;
+        font-size: 16px;
     }
     &--content:hover &--content__item {
         opacity: 0.2;
