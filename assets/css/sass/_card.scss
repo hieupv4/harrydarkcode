@@ -1,0 +1,84 @@
+.card {
+  max-width: 450px;
+  margin: 0 auto;
+  background: $light-color;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
+  &-desc {
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba($color: $dark-color, $alpha: 0.66);
+  }
+  &-header {
+    min-height: 100px;
+    background-image: url('../images/banner.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+  }
+  &-avatar {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+    margin-top: -75px;
+    position: relative;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid $light-color;
+    }
+  }
+  &-name {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  &-body {
+    padding: 0 40px 40px;
+    @media (max-width: 600px) {
+      padding: 0 16px 40px;
+    }
+  }
+  &-info {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    &__spacing {
+      border-bottom: 0.5px solid rgba($color: $dark-color, $alpha: 0.3);
+      margin: 15px 0;
+    }
+    &__item {
+      display: flex;
+      gap: 16px;
+    }
+  }
+  &-footer {
+    padding-bottom: 15px;
+    padding-top: 45px;
+    border-top: 1px dashed rgba($color: $dark-color, $alpha: 0.3);
+  }
+  &-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    a {
+      i {
+        display: block;
+        font-size: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+// sass --no-source-map ./assets/css/sass/app.scss ./assets/css/app.css  --watch --style compressed
+@import 'variables';
+@import 'global';
+@import 'card';
